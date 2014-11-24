@@ -1,0 +1,19 @@
+{
+  "name": "lateralus-components",
+  "version": "0.0.1",
+  "authors": [
+    "Jeremy Kahn <jeremy@jellyvision.com>"
+  ],
+  "description": "A set of general-use components for Lateralus",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "lateralus"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Jellyvision/lateralus-components",
+  "dependencies": {
+    "lateralus": "~0.0.3"
+  }
+}
