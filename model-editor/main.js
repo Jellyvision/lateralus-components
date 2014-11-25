@@ -15,7 +15,7 @@ define([
 ) {
   'use strict';
 
-  var ExtendedComponent = Lateralus.Component.extend({
+  var ModelEditorComponent = Lateralus.Component.extend({
     name: 'model-editor'
     ,View: View
     ,template: template
@@ -28,5 +28,5 @@ define([
     }
   });
 
-  return ExtendedComponent;
+  return ModelEditorComponent;
 });
