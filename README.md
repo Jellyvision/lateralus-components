@@ -15,7 +15,7 @@ require.config({
   }, {
     name: 'lateralus.component.tabs'
     location: 'bower_components/lateralus-components/tabs'
-}, {
+  }, {
     name: 'lateralus.component.model-editor'
     location: 'bower_components/lateralus-components/model-editor'
   }

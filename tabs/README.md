@@ -59,5 +59,5 @@ Be sure to wire up the style sheet:
 
 ````sass
 // app/styles/main.scss
-@import 'lateralus-components/tabs/styles/main.sass';
+@import 'lateralus-components/tabs/styles/main.sass'
 ````
