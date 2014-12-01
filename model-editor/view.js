@@ -20,6 +20,8 @@ define([
   var ModelEditorComponentView = Lateralus.Component.View.extend({
     template: template
 
+    ,onChange: _.noop
+
     /**
      * @param {Object} opts
      * @param {Array.<string>} opts.lockedFields
@@ -65,8 +67,12 @@ define([
     }
 
     ,onChangeJSONEditor: function () {
-      this.model.clear({ silent: true });
-      this.model.set(this.jsonEditor.get(), { causedByJSONEditor: true });
+      var model = this.model;
+      var oldData = model.toJSON();
+      model.clear({ silent: true });
+      var newData = this.jsonEditor.get();
+      model.set(newData, { causedByJSONEditor: true });
+      this.onChange(newData, oldData);
     }
 
     /**
