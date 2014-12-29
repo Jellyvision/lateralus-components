@@ -17,7 +17,10 @@ define([
 ) {
   'use strict';
 
-  var ModelEditorComponentView = Lateralus.Component.View.extend({
+  var Base = Lateralus.Component.View;
+  var baseProto = Base.prototype;
+
+  var ModelEditorComponentView = Base.extend({
     template: template
 
     ,onChange: _.noop
@@ -27,7 +30,7 @@ define([
      * @param {Array.<string>} opts.lockedFields
      */
     ,initialize: function () {
-      this._super('initialize', arguments);
+      baseProto.initialize.apply(this, arguments);
 
       this.jsonEditor = new JSONEditor(this.$jsoneditor[0], {
         change: this.onChangeJSONEditor.bind(this)

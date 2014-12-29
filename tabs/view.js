@@ -15,9 +15,12 @@ define([
 ) {
   'use strict';
 
+  var Base = Lateralus.Component.View;
+  var baseProto = Base.prototype;
+
   var SHOW_CLASS = 'tab-show';
 
-  var TabsComponentView = Lateralus.Component.View.extend({
+  var TabsComponentView = Base.extend({
     template: template
 
     ,className: 'tabs'
@@ -38,7 +41,7 @@ define([
         ,$el: parentView.$el
       });
 
-      this._super('initialize', arguments);
+      baseProto.initialize.apply(this, arguments);
 
       this.$tabs = this.$tabsContainer.children();
       this.$tabs.addClass('tab');
