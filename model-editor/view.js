@@ -25,18 +25,24 @@ define([
 
     ,onChange: _.noop
 
+    // jshint maxlen:200
     /**
      * @param {Object} opts
-     * @param {Array.<string>} opts.lockedFields
+     * @param {Array.<string>=} [opts.lockedFields]
+     * @param {Object=} [opts.jsonEditorOptions] See
+     * https://github.com/josdejong/jsoneditor/blob/master/docs/api.md#jsoneditorcontainer--options--json
+     * for possible options.
      */
     ,initialize: function () {
       baseProto.initialize.apply(this, arguments);
 
-      this.jsonEditor = new JSONEditor(this.$jsoneditor[0], {
+      var options = _.clone(this.jsonEditorOptions || {});
+      var jsonEditorOptions = _.extend(options, {
         change: this.onChangeJSONEditor.bind(this)
-
         ,editable: this.onCheckEditableJSONEditor.bind(this)
       });
+
+      this.jsonEditor = new JSONEditor(this.$jsoneditor[0], jsonEditorOptions);
     }
 
     ,render: function () {
