@@ -36,10 +36,7 @@ define([
      */
     ,initialize: function () {
       var parentView = this.parentView;
-      _.extend(this, {
-        el: parentView.el
-        ,$el: parentView.$el
-      });
+      this.setElement(parentView.$el);
 
       baseProto.initialize.apply(this, arguments);
 
