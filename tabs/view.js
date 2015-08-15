@@ -26,7 +26,13 @@ define([
     ,className: 'tabs'
 
     ,events: {
-      'click .tab': 'onClickTab'
+      /**
+       * @param {jQuery.Event} evt
+       */
+      'click .tab': function (evt) {
+        this.selectTab($(evt.currentTarget));
+        evt.preventDefault();
+      }
     }
 
     /**
@@ -46,14 +52,6 @@ define([
       this.$contents.addClass('tab-content');
 
       this.selectTab(this.$tabs.first());
-    }
-
-    /**
-     * @param {jQuery.Event} evt
-     */
-    ,onClickTab: function (evt) {
-      this.selectTab($(evt.currentTarget));
-      evt.preventDefault();
     }
 
     /**
