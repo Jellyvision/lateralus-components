@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/Jellyvision/lateralus-components/issues"
   },
-  "homepage": "https://github.com/Jellyvision/lateralus-components#readme"
+  "homepage": "https://github.com/Jellyvision/lateralus-components#readme",
+  "dependencies": {
+    "lateralus": "0.9.3",
+    "jsoneditor": "~4.1.3"
+  }
 }

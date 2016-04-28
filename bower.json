@@ -14,7 +14,7 @@
   "license": "MIT",
   "homepage": "https://github.com/Jellyvision/lateralus-components",
   "dependencies": {
-    "lateralus": "~0.3.1",
+    "lateralus": "0.9.3",
     "jsoneditor": "~4.1.3"
   }
 }
