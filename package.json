@@ -1,0 +1,22 @@
+{
+  "name": "lateralus-components",
+  "version": "0.0.9",
+  "description": "A set of general-use components for Lateralus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jellyvision/lateralus-components.git"
+  },
+  "author": "Jeremy Kahn <jeremy@jellyvision.com>",
+  "keywords": [
+    "lateralus"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jellyvision/lateralus-components/issues"
+  },
+  "homepage": "https://github.com/Jellyvision/lateralus-components#readme"
+}
