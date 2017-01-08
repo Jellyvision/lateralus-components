@@ -20,5 +20,4 @@ require.config({
     location: 'bower_components/lateralus-components/model-editor'
   }
 });
-
 ````
