@@ -1,5 +1,5 @@
 {
-  "name": "lateralus-components",
+  "name": "@jellyvision/lateralus-components",
   "version": "0.0.10",
   "description": "A set of general-use components for Lateralus",
   "main": "index.js",
