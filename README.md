@@ -9,14 +9,14 @@ To wire up a component in your app, set it up as an [AMD package](http://require
 require.config({
   baseUrl: '/',
   packages: [{
-    name: 'lateralus'
+    name: 'lateralus',
     location: 'bower_components/lateralus/scripts',
-    main: 'lateralus',
+    main: 'lateralus'
   }, {
-    name: 'lateralus.component.tabs'
+    name: 'lateralus.component.tabs',
     location: 'bower_components/lateralus-components/tabs'
   }, {
-    name: 'lateralus.component.model-editor'
+    name: 'lateralus.component.model-editor',
     location: 'bower_components/lateralus-components/model-editor'
   }
 });
