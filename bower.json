@@ -1,6 +1,5 @@
 {
   "name": "lateralus-components",
-  "version": "0.0.10",
   "authors": [
     "Jeremy Kahn <jeremy@jellyvision.com>"
   ],
@@ -14,7 +13,7 @@
   "license": "MIT",
   "homepage": "https://github.com/Jellyvision/lateralus-components",
   "dependencies": {
-    "lateralus": "0.9.3",
+    "lateralus": "0.10.1",
     "jsoneditor": "~4.1.3"
   }
 }
