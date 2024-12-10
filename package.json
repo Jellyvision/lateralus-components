@@ -1,6 +1,6 @@
 {
   "name": "@jellyvision/lateralus-components",
-  "version": "0.0.12",
+  "version": "0.0.13-alpha.0",
   "description": "A set of general-use components for Lateralus",
   "scripts": {
     "test": "jshint model-editor/*.js select/*.js tabs/*.js"
