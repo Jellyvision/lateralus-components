@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+- 5
+deploy:
+  provider: npm
+  email: operations@jellyvision.com
+  on:
+    tags: true
+  api_key:
+    secure: fKz89WnuDPSFvjV5iFCq+z36gLDjhtbGT+pdTN7MWnMonFk6Vex5KoUqDQkorrH8wTU3qMhjrqa+HH9ShoOBVjC5z05mEo7yQ0utR7Hb6Dpr77PqJAwm4bphBZ3hAI9/qXtbfi2KGwuPoE0oa59TAebLosKmaP1AJVhDPTH+eu8=
